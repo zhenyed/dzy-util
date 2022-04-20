@@ -1,5 +1,8 @@
 package io.zhenye.encrypt;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
@@ -12,7 +15,8 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 
-public class AESUtil {
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+public class AESUtils {
 
     private static final String AES_CIPHER = "AES/GCM/NoPadding";
 

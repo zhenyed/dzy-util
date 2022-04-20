@@ -5,8 +5,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;
 import com.jayway.jsonpath.Option;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
-public class JsonPathUtil {
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+public class JsonPathUtils {
 
     private static final ObjectMapper mapper = new ObjectMapper();
 

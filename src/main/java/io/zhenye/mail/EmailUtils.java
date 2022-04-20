@@ -23,7 +23,7 @@ import java.util.Properties;
  */
 @Slf4j
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class EmailUtil {
+public class EmailUtils {
 
     @Data
     public static class EmailConfig {
