@@ -31,3 +31,6 @@ build/
 # system ignore
 .DS_Store
 Thumbs.db
+
+# jmh
+jmh-result.json
