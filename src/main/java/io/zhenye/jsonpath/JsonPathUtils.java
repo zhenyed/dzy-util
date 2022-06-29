@@ -19,10 +19,10 @@ public class JsonPathUtils {
         return JsonPath.using(config).parse(str).read(param);
     }
 
-    public static void set(Object object, String param) throws JsonProcessingException {
+    public static void set(Object object, String param, String newValue) throws JsonProcessingException {
         String str = mapper.writeValueAsString(object);
         Configuration config = Configuration.defaultConfiguration().addOptions(Option.SUPPRESS_EXCEPTIONS);
-        JsonPath.using(config).parse(str).set(param, "");
+        JsonPath.using(config).parse(str).set(param, newValue);
     }
 
 }
